@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple Test Page</title>
+  <title>Enhanced Test Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
 
     .container {
       text-align: center;
-      margin-top: 100px;
+      margin-top: 80px;
     }
 
     h1 {
@@ -25,7 +25,26 @@
       font-size: 18px;
     }
 
+    img {
+      width: 200px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    a {
+      display: block;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     button {
+      margin-top: 20px;
       padding: 10px 20px;
       font-size: 16px;
       background-color: #007bff;
@@ -33,17 +52,27 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      transition: transform 0.3s ease;
     }
 
     button:hover {
       background-color: #0056b3;
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to My Test Page</h1>
-    <p>This is a simple HTML and CSS example for testing.</p>
+    <h1>Welcome to My Enhanced Page</h1>
+    <p>This page includes an image, a link, and some animation!</p>
+
+    <!-- Image (you can replace the URL with your own image) -->
+    <img src="https://via.placeholder.com/200" alt="Sample Image">
+
+    <!-- Link -->
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+
+    <!-- Button -->
     <button>Click Me</button>
   </div>
 </body>
